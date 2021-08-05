@@ -1,0 +1,21 @@
+imports
+    scanner, rand
+tackling variables
+    simple way
+        have 2 variables, 1 for holding past total, 1 for newly generated number do for both dealer and player
+    complicated way
+        have string formated such that first two letters are numbers indicating numeric value, third letter is typing(D,H,S,C), final letter is what deck it belongs to(if played with multiple decsk)
+        acces with char at and use conditionals or type sets(even '1' type set to int is smaller than '2' ) to get totals
+    shuffleDeck()
+        create 52 entities, assign each with a card number and type, and deal
+do simple loop to start the program with while, conditional variable set to yes initially to loop
+randomize and deal 2 cards to both hands
+show player 1 card off of dealer, and ask if they want to draw, enter into another loop
+game ends with a player losing and program asking if player would like another round
+
+#with either way, no need for complicated actions like shuffleDeck() as simple way is too simple and complicated way we can simply re run loop until viable card
+#either way we dont need to make 52 elements and assign them value, since both that and these ways are equally random for any player
+
+#to spice up we can add starting bet to see if player can bankrupt dealer or vice versa
+#using complicated method one can also code multiple card games, simple would only work to generate a hand for blackjack
+#shuffleDeck such codes would work better for poker since black jack decks are shuffled after each win, defeating the act of creating 52 cards
